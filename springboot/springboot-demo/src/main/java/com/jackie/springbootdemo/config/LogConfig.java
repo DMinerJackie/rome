@@ -12,7 +12,6 @@ public class LogConfig {
 
     @Bean
     public Person logMethod() {
-        LOG.debug("=========debug log==========");
         LOG.info("==========print log==========");
         return new Person();
     }
