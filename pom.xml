@@ -12,5 +12,20 @@
 
     <modules>
         <module>springboot</module>
+        <module>wowjava</module>
     </modules>
+
+    <properties>
+        <lombok.version>1.16.18</lombok.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
