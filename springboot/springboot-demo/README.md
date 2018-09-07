@@ -28,3 +28,14 @@ http://www.cnblogs.com/xishuai/p/spring-boot-log4j2.html
 
 springboot 中文api
 https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/IX.%20%E2%80%98How-to%E2%80%99%20guides/73.2.1%20Use%20YAML%20or%20JSON%20to%20configure%20Log4j%202.html
+
+Spring Boot + RabbitMQ死信机制实现延迟队列（队列的ttl和消息的ttl，以及何为死亡消息）
+https://blog.csdn.net/woaitingting1985/article/details/79087357
+
+当ack为manual，default-requeue-rejected为false时，则消息在重试指定次数后会重新进入队列
+
+SpringBoot消费RabbitMQ 通过死信保证无法消费的消息不会丢失(default-requeue-rejeted设置)
+https://blog.csdn.net/xj90314/article/details/80422320
+
+inequivalent arg 'x-message-ttl' for queue 'QUEUE_NAME' in vhost '/'
+https://www.bbsmax.com/A/x9J2mpAZz6/
