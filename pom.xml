@@ -18,6 +18,8 @@
     <properties>
         <lombok.version>1.16.18</lombok.version>
         <spring.boot.version>2.0.4.RELEASE</spring.boot.version>
+        <orika.version>1.5.2</orika.version>
+        <fastjson.version>1.2.47</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -45,6 +47,18 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
                 <version>${spring.boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${orika.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
 
