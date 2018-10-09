@@ -7,3 +7,6 @@ https://www.cnblogs.com/znicy/p/6659386.html
 
 关于单例设计模式中的双重判断的理解和分析
 https://blog.csdn.net/shallynever/article/details/52503139
+
+人人都会设计模式---策略模式--Strategy
+https://segmentfault.com/a/1190000011918366#articleHeader1
