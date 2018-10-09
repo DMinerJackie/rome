@@ -22,6 +22,7 @@ public class RuntimeConstantPoolOOM {
             list.add(String.valueOf(i++).intern());
         }
 
+        // https://www.cnblogs.com/grefr/p/6087987.html
 //        String str1 = new StringBuilder("计算机").append("技术").toString();
 //        System.out.println(str1.intern() == str1);
 //
