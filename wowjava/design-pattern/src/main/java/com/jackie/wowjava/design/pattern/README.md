@@ -10,3 +10,6 @@ https://blog.csdn.net/shallynever/article/details/52503139
 
 人人都会设计模式---策略模式--Strategy
 https://segmentfault.com/a/1190000011918366#articleHeader1
+
+说说Java代理模式
+https://www.cnblogs.com/chinajava/p/5880870.html
