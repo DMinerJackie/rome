@@ -13,6 +13,7 @@
     <modules>
         <module>springboot</module>
         <module>wowjava</module>
+        <module>algo</module>
     </modules>
 
     <properties>
