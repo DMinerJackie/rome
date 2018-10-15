@@ -24,7 +24,7 @@ Rome was not built in one day 罗马非一日建成
     * 如何使用Lombok解决重复写set和get方法问题 点击[这里](https://www.cnblogs.com/bigdataZJ/p/lombok_and_orika.html)
     * 如何使用Orika解决model拷贝问题  点击[这里](https://www.cnblogs.com/bigdataZJ/p/lombok_and_orika.html)
     * 回调机制Callback
-    * * 带有合并单元格功能的Excel表格导出功能 点击[这里](https://www.cnblogs.com/bigdataZJ/p/excel_export.html)
+    * 带有合并单元格功能的Excel表格导出功能 点击[这里](https://www.cnblogs.com/bigdataZJ/p/excel_export.html)
   * design-pattern
     * 单例模式
     * 策略模式
