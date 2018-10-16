@@ -31,7 +31,7 @@ Rome was not built in one day 罗马非一日建成
     * 代理模式:静态代理和动态代理
   * jvm
     * 常见OOM(Out Of Memory)实例，代码源于《深入理解Java虚拟机》中的实例
-  * algo
-    * geek-time-algo
-       * 数组插入、删除、查找和打印功能
+* algo
+  * geek-time-algo
+    * 数组插入、删除、查找和打印功能
 
