@@ -18,6 +18,7 @@ Rome was not built in one day 罗马非一日建成
     * springboot项目的搭建和运行
     * springboot项目内置LogBack日志系统的使用 点击[这里](https://www.cnblogs.com/bigdataZJ/p/springboot-log.html)
     * springboot项目如何使用Log4j2 点击[这里](https://www.cnblogs.com/bigdataZJ/p/spring-boot-log4j2.html)
+    * springboot项目集成rabbitmq 点击[这里](https://www.cnblogs.com/bigdataZJ/p/springboot-rabbitmq.html)
 * wowjava
   * best-practice-java
     * 如何使用优雅的Optional
@@ -34,4 +35,5 @@ Rome was not built in one day 罗马非一日建成
 * algo
   * geek-time-algo
     * 数组插入、删除、查找和打印功能
+    * 链表插入、删除、查找和打印功能
 
