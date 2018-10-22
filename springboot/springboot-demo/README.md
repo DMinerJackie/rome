@@ -39,3 +39,9 @@ https://blog.csdn.net/xj90314/article/details/80422320
 
 inequivalent arg 'x-message-ttl' for queue 'QUEUE_NAME' in vhost '/'
 https://www.bbsmax.com/A/x9J2mpAZz6/
+
+spring中的DisposableBean和InitializingBean，ApplicationContextAware的用法
+https://www.cnblogs.com/zr520/p/4894554.html
+
+SpringBoot - Unable to Start embedded TomCat(宗旨是排除servlet-api依赖)
+https://stackoverflow.com/questions/36859646/springboot-unable-to-start-embedded-tomcat

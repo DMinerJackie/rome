@@ -1,0 +1,29 @@
+
+---
+##################### 测试环境 #####################
+
+spring:
+#  profiles: test
+  rabbitmq:
+          host: 192.168.3.161
+          port: 5672
+          username: guest
+          password: guest
+          cache:
+            channel:
+              size: 10
+          listener:
+              type: simple
+              simple:
+                acknowledge-mode: auto
+                concurrency: 5
+                default-requeue-rejected: true
+                max-concurrency: 100
+                retry:
+                  enabled: true
+#                  initial-interval: 1000ms
+                  max-attempts: 3
+#                  max-interval: 1000ms
+                  multiplier: 1
+                  stateless: true
+#          publisher-confirms: true
