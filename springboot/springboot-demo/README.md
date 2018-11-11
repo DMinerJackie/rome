@@ -45,3 +45,18 @@ https://www.cnblogs.com/zr520/p/4894554.html
 
 SpringBoot - Unable to Start embedded TomCat(宗旨是排除servlet-api依赖)
 https://stackoverflow.com/questions/36859646/springboot-unable-to-start-embedded-tomcat
+
+springboot+自定义注解实现灵活的切面配置
+https://www.cnblogs.com/hhhshct/p/8428045.html
+
+Spring AOP @Before @Around @After 等 advice 的执行顺序
+https://blog.csdn.net/rainbow702/article/details/52185827
+
+spring aop切面编程实现操作日志步骤（有详细说明各种注解的作用）
+https://www.cnblogs.com/nizuimeiabc1/p/7650898.html
+
+Spring AOP(三)之AfterThrowing增强处理
+https://blog.csdn.net/owen_william/article/details/50812780
+
+简单的aop实现日志打印（切入点表达式）
+https://www.cnblogs.com/lixiang1993/p/7447853.html
