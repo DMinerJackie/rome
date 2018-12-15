@@ -17,11 +17,6 @@ public class BackAndForwardDemo {
         backStack.printAll();
         forwardStack = BackAndForwardUtil.forwardStack;
         forwardStack.printAll();
-
-        BackAndForwardUtil backAndForwardUtil = new BackAndForwardUtil();
-        backAndForwardUtil.hell0();
-
-
     }
 
 
