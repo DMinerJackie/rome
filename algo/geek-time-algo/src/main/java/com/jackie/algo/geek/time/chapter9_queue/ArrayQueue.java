@@ -26,9 +26,20 @@ public class ArrayQueue {
      * 入队
      */
     public boolean enqueue(String ele) {
-        // 队列满了
+
         if (tail == n) {
-            return false;
+            // 队列满了
+            if (head == 0) {
+                return false;
+            }
+
+            for (int i = head; i < tail; i++) {
+                items[i - head] = items[i];
+            }
+
+            // 数据搬移后，重置head和tail位置
+            tail -= head;
+            head = 0;
         }
 
         items[tail++] = ele;
