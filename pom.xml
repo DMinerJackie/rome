@@ -14,6 +14,7 @@
         <module>springboot</module>
         <module>wowjava</module>
         <module>algo</module>
+        <module>middleware</module>
     </modules>
 
     <properties>
@@ -24,6 +25,8 @@
         <guava.version>20.0</guava.version>
         <poi.version>3.9</poi.version>
         <common.lang3.version>3.7</common.lang3.version>
+        <spring.data.redis.version>2.1.3.RELEASE</spring.data.redis.version>
+        <jedis.version>2.9.0</jedis.version>
     </properties>
 
     <dependencyManagement>
@@ -95,7 +98,20 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${common.lang3.version}</version>
             </dependency>
-        </dependencies>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+        </dependencies>
     </dependencyManagement>
 </project>
