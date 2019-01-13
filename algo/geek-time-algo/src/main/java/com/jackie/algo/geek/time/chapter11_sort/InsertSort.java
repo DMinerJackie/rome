@@ -36,7 +36,7 @@ public class InsertSort {
      */
     public static void insertSort(int arr[]) {
         int length = arr.length;
-        if (length <= 0) {
+        if (length <= 1) {
             return;
         }
 

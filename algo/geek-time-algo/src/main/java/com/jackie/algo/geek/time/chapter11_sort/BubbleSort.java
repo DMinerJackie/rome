@@ -29,7 +29,7 @@ public class BubbleSort {
      */
     public static void bubbleSort(int[] arr) {
         int length = arr.length;
-        if (length <= 0) {
+        if (length <= 1) {
             return;
         }
 
@@ -78,7 +78,7 @@ public class BubbleSort {
      */
     public static void bubbleSort2(int[] arr) {
         int length = arr.length;
-        if (length <= 0) {
+        if (length <= 1) {
             return;
         }
 
