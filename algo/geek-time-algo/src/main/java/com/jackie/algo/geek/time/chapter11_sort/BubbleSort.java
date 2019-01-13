@@ -7,8 +7,9 @@ package com.jackie.algo.geek.time.chapter11_sort;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{100,82,74,62,54,47,38,29};
+        int[] arr = new int[]{100,82,74,62,54,147};
         bubbleSort(arr);
+        bubbleSort2(arr);
     }
 
     /**
@@ -28,19 +29,81 @@ public class BubbleSort {
      */
     public static void bubbleSort(int[] arr) {
         int length = arr.length;
+        if (length <= 0) {
+            return;
+        }
+
         int temp;
         for (int i = 0; i < length - 1; i++) {
+            boolean flag = false;
             for (int j = 0; j < length - i - 1; j++) {
                 if (arr[j] > arr[j+1]) {
                     temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
+
+                    flag = true;
                 }
+            }
+
+            if (!flag) {
+                System.out.println("total loop: " + (i+1) + " times, stop at index:" + i);
+                break;
             }
         }
 
         for (int i = 0; i < length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
+    }
+
+    /**
+     * 和上面的不同之处在于，上面的是保证数组从后往前有序，这里的是保证从前往后的有序
+     * 上面的做法如下所示，每次要遍历的元素如下
+     * a[0],a[1],a[2],a[3],a[4],a[5]
+     * a[0],a[1],a[2],a[3],a[4]     (这里不再遍历a[5]的位置，因为a[5]在第一轮遍历已是最大，不需要参与遍历，下面遍历同理)
+     * a[0],a[1],a[2],a[3]
+     * a[0],a[1],a[2]
+     * a[0],a[1]
+     * a[0]
+     *
+     * 下面的做法如下所示，每次要遍历的元素如下
+     * a[0],a[1],a[2],a[3],a[4],a[5]
+     *      a[1],a[2],a[3],a[4],a[5]   (这里不再遍历a[0]的位置，因为a[0]在第一轮遍历已是最小，不需要参与遍历，下面遍历同理)
+     *           a[2],a[3],a[4],a[5]
+     *                a[3],a[4],a[5]
+     *                     a[4],a[5]
+     *                          a[5]
+     */
+    public static void bubbleSort2(int[] arr) {
+        int length = arr.length;
+        if (length <= 0) {
+            return;
+        }
+
+        int temp;
+        for (int i = 0; i < length - 1; i++) {
+            boolean flag = false;
+            for (int j = length - 1; j > i; j--) {
+                if (arr[j] < arr[j-1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+
+                    flag = true;
+                }
+            }
+
+            if (!flag) {
+                System.out.println("total loop: " + (length - i - 1) + " times, stop at index:" + i);
+                break;
+            }
+        }
+
+        for (int i = 0; i < length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 }
